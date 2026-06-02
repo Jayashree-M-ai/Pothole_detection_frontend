@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun  2 12:24:18 2026
+
+@author: Jayashree M
+"""
+
+body{
+    font-family: Arial;
+    padding:20px;
+    text-align:center;
+}
+
+img,video{
+    max-width:100%;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
