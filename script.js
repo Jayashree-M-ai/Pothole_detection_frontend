@@ -54,7 +54,7 @@ function uploadFile() {
                 resultDiv.innerHTML = `
                 <h3>Output Image</h3>
                 <img
-                src="https://pothole-detection-system-1-7uj2.onrender.com${result.output_file}"
+                src="https://pothole-detection-system-1-7uj2.onrender.com/${result.output_file}"
                 width="100%">
                 `;
 
@@ -64,7 +64,7 @@ function uploadFile() {
                 <h3>Output Video</h3>
                 <video width="100%" controls>
                 <source
-                src="https://pothole-detection-system-1-7uj2.onrender.com${result.output_file}">
+                src="https://pothole-detection-system-1-7uj2.onrender.com/${result.output_file}">
                 </video>
                 `;
             }
