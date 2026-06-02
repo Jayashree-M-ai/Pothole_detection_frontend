@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun  2 12:21:17 2026
-
-@author: Jayashree M
-"""
-
 const API_URL =
 "https://pothole-detection-system-1-7uj2.onrender.com/detect";
  
