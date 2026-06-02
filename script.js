@@ -40,6 +40,8 @@ function uploadFile() {
             const result =
                 await response.json();
 
+            console.log("OUTPUT FILE:", result.output_file);         
+
             console.log(result);
             alert(JSON.stringify(result));
 
@@ -78,7 +80,7 @@ function uploadFile() {
                 </p>
                 <video width="100%" controls>
                 <source
-                src="${fileUrl}">
+                src="${fileUrl}" width="100%">
                 </video>
                 `;
             }
