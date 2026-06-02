@@ -39,7 +39,7 @@ function uploadFile() {
                 await response.json();
 
             console.log(result);
-            alret(JSON.stringify(result));
+            alert(JSON.stringify(result));
 
             document.getElementById("status").innerText =
                 "Detection Complete";
