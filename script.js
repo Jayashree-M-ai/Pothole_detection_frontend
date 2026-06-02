@@ -53,6 +53,8 @@ function uploadFile() {
 
                 resultDiv.innerHTML = `
                 <h3>Output Image</h3>
+                <p><b>Potholes Detected:</b> ${result.count}</p>
+                <p><b>GPS:</b> ${position.coords.latitude}, ${position.coords.longitude}</p>
                 <img
                 src="https://pothole-detection-system-1-7uj2.onrender.com/${result.output_file}"
                 width="100%">
@@ -62,6 +64,8 @@ function uploadFile() {
 
                 resultDiv.innerHTML = `
                 <h3>Output Video</h3>
+                <p><b>Potholes Detected:</b> ${result.count}</p>
+                <p><b>GPS:</b> ${position.coords.latitude}, ${position.coords.longitude}</p>
                 <video width="100%" controls>
                 <source
                 src="https://pothole-detection-system-1-7uj2.onrender.com/${result.output_file}">
