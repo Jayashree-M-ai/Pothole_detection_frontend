@@ -52,7 +52,7 @@ function uploadFile() {
                 document.getElementById("result");
 
            
-            const fileUrl=window.location.origin+result.output_file;
+            const fileUrl = "https://pothole-detection-system-1-7uj2.onrender.com" + result.output_file;
             if (
                 file.type.startsWith("image/")
             ) {
@@ -80,7 +80,8 @@ function uploadFile() {
                 </p>
                 <video width="100%" controls>
                 <source
-                src="${fileUrl}" width="100%">
+                src="${fileUrl}"
+                width="100%">
                 </video>
                 `;
             }
