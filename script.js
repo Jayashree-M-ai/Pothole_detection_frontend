@@ -21,9 +21,7 @@ function uploadFile() {
 
             formData.append("file", file);
 
-            console.log("Latitude:", position.coords.latitude);
-            console.log("Longitude:", position.coords.longitude);
-            
+                   
             formData.append(
                 "lat",
                 position.coords.latitude
@@ -51,6 +49,8 @@ function uploadFile() {
             const resultDiv =
                 document.getElementById("result");
 
+           
+            const fileUrl=window.location.origin+result.output_file;
             if (
                 file.type.startsWith("image/")
             ) {
@@ -63,7 +63,7 @@ function uploadFile() {
                 ${position.coords.longitude}
                 </p>
                 <img
-                src="https://pothole-detection-system-1-7uj2.onrender.com/${result.output_file}"
+                src="${fileUrl}"
                 width="100%">
                 `;
 
@@ -78,7 +78,7 @@ function uploadFile() {
                 </p>
                 <video width="100%" controls>
                 <source
-                src="https://pothole-detection-system-1-7uj2.onrender.com/${result.output_file}">
+                src="${fileUrl}">
                 </video>
                 `;
             }
