@@ -38,6 +38,9 @@ function uploadFile() {
             const result =
                 await response.json();
 
+            console.log(result);
+            alret(JSON.stringify(result));
+
             document.getElementById("status").innerText =
                 "Detection Complete";
 
